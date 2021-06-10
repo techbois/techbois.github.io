@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Tech Bois Official">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Tech Bois Official</title>
+	
+	<!-- Royal Preloader CSS -->
+	<link href="css/royal_preloader.css" rel="stylesheet">
+
+	<!-- jQuery Files -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Royal Preloader -->
+	<script type="text/javascript" src="js/royal_preloader.min.js"></script>
+	<script type="text/javascript">
+		Royal_Preloader.config({
+		    mode:           'number',
+		    showProgress:   false,
+		    background:     '#1d1d1d'
+		});
+	</script>
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/ionicons.min.css" rel="stylesheet">
+	<link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/logoiconfont.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" title="main-css">
+
+
+<body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70">
+	<div id="royal_preloader"></div>
+
+	<!-- Begin Header -->
+	<header>
+		<!-- Begin Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="row">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home" data-id="home" class="scroll-link">Home</a></li>
+							<li><a href="javascript:void(0)" data-id="contact" class="scroll-link">Coming Soon</a>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!-- End Navigation -->
+	</header>
+	<!-- End Header -->
+
+	<!-- Begin Jumbotron -->
+	<div class="jumbotron jumbotron-main" id="home">
+		<div id="particles-js"></div><!-- /.particles div -->
+		<div class="container center-vertically-holder">
+			<div class="center-vertically">
+				<div id="scaleReveal" class="col-sm-12 text-center">
+					<h1 class="mb40">
+						Coming <strong>Soon</strong>.
+					</h1>
+					<div id="clock"></div>
+				</div><!-- /.column -->
+			</div><!-- /.vertical center -->
+		</div><!-- /.container -->
+	</div>
+	<!-- End Jumbotron -->
+
+	<!-- Begin Footer -->
+	<footer class="background2 footer-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<h2 class="theme-title">Tech<span class="theme-title-smaller">Bois</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-small text-center">
+					<hr>
+					<button type="button" class="btn btn-primary btn-up-footer btn-lg scroll-top">Up</button>
+					<p class="no-margin">&copy; Tech Bois 2021</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</footer><!-- /.footer -->
+	<!-- Begin Footer -->
+
+	<!-- Javascript Files -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/particles.min.js"></script>
+	<script type="text/javascript" src="js/particlesRun.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+	<script type="text/javascript" src="js/form-validator.min.js"></script>  
+	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+	<script type="text/javascript">
+		/* ---- Countdown ---- */
+		$('#clock').countdown('2020/12/25').on('update.countdown', function(event) {
+		  var $this = $(this).html(event.strftime(''
+		    + '<div class="clock-section"> <b>%-w</b> <span>week%!w</span> </div>'
+		    + '<div class="clock-section"> <b>%-d</b> <span>day%!d</span> </div>'
+		    + '<div class="clock-section"> <b>%H</b> <span>hours</span> </div>'
+		    + '<div class="clock-section"> <b>%M</b> <span>min</span> </div>'
+		    + '<div class="clock-section"> <b>%S</b> <span>sec</span> </div>'));
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countTo.js"></script>  
+	<script type="text/javascript">
+		/* ---- Counter (our count) ---- */
+		$('#ourcount').one('inview', function(event, isInView) {
+			if (isInView) {
+				$('.timer').countTo({speed: 3000});
+			}
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="js/style-switcher.js"></script><!-- Remove for production -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
